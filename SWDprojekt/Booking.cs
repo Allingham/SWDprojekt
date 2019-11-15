@@ -21,7 +21,7 @@ namespace SWDprojekt
 
         public void Add()
         {
-            Deltager.Add(Deltagere())
+            Deltager.Add(new Deltager())
         }
     }
 }
