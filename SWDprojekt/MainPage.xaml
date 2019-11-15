@@ -45,6 +45,13 @@
               </Custom1:EventTriggerBehavior>
             </Custom:Interaction.Behaviors>
           </Button>
+            <Button Content="Test">
+                <Custom:Interaction.Behaviors>
+                    <Custom1:EventTriggerBehavior EventName="Click">
+                        <Custom1:NavigateToPageAction TargetPage="SWDprojekt.page4" />
+                    </Custom1:EventTriggerBehavior>
+                </Custom:Interaction.Behaviors>
+            </Button>
         </StackPanel>
         <StackPanel
             Grid.Row="1"
