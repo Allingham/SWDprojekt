@@ -9,15 +9,19 @@ namespace SWDprojekt
 {
     class Booking
     {
-        public List<Deltager> Delagere { get; set; }
+        public List<Deltager> Deltagere { get; set; }
         public DateTime Dato{ get; set; }
         public Bane ValgtBane{ get; set; }
 
         public Booking(List<Deltager> delagere, DateTime dato, Bane valgtBane){
-            Delagere = delagere;
+            Deltagere = delagere;
             Dato = dato;
             ValgtBane = valgtBane;
         }
 
+        public void Add()
+        {
+            Deltager.Add(Deltagere())
+        }
     }
 }

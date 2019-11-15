@@ -4,10 +4,21 @@ namespace SWDprojekt{
     public class Deltager{
         public string Navn{ get; set; }
         public bool Voksen{ get; set; }
+        
 
-        public Deltager(string navn, bool voksen){
+        public Deltager(string navn, bool voksen)
+        {
             Navn = navn;
             Voksen = voksen;
+            
         }
+
+        public void Add()
+        {
+            Deltager.Add(Deltager)
+        }
+
+        
+
     }
 }
