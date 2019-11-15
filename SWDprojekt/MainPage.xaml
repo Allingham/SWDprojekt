@@ -31,21 +31,14 @@
                     </Custom1:EventTriggerBehavior>
                 </Custom:Interaction.Behaviors>
             </Button>
-          <Button Content="Bane">
-            <Custom:Interaction.Behaviors>
-              <Custom1:EventTriggerBehavior EventName="Click">
-                <Custom1:NavigateToPageAction TargetPage="SWDprojekt.page3" />
-              </Custom1:EventTriggerBehavior>
-            </Custom:Interaction.Behaviors>
-          </Button>
-          <Button Content="Bestil">
-            <Custom:Interaction.Behaviors>
-              <Custom1:EventTriggerBehavior EventName="Click">
-                <Custom1:NavigateToPageAction TargetPage="SWDprojekt.page4" />
-              </Custom1:EventTriggerBehavior>
-            </Custom:Interaction.Behaviors>
-          </Button>
-            <Button Content="Test">
+            <Button Content="Bane">
+                <Custom:Interaction.Behaviors>
+                    <Custom1:EventTriggerBehavior EventName="Click">
+                        <Custom1:NavigateToPageAction TargetPage="SWDprojekt.page3" />
+                    </Custom1:EventTriggerBehavior>
+                </Custom:Interaction.Behaviors>
+            </Button>
+            <Button Content="Bestil">
                 <Custom:Interaction.Behaviors>
                     <Custom1:EventTriggerBehavior EventName="Click">
                         <Custom1:NavigateToPageAction TargetPage="SWDprojekt.page4" />
