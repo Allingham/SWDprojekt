@@ -10,15 +10,6 @@ namespace SWDprojekt{
         {
             Navn = navn;
             Voksen = voksen;
-            
         }
-
-        public void Add()
-        {
-            
-        }
-
-        
-
     }
 }

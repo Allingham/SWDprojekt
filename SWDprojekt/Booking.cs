@@ -14,23 +14,17 @@ namespace SWDprojekt
         public DateTime Dato{ get; set; }
         public Bane ValgtBane{ get; set; }
 
-        public Booking(List<Deltager> delagere, DateTime dato, Bane valgtBane){
+        public Booking(ObservableCollection<Deltager> delagere, DateTime dato, Bane valgtBane){
             Deltagere = delagere;
             Dato = dato;
             ValgtBane = valgtBane;
         }
 
-        public void Deltagere()
-        {
-            Deltagere = new ObservableCollection<Deltager>();
-            {
-                Deltagere.Add= new Deltager(DateTime.Now,ValgtBane);
-            }
-        }
+     
 
-        public void Add()
+        public void Add(String name, bool voksen)
         {
-            Booking.Add(new Booking(Deltager, DateTime.Now, ValgtBane));
+            Deltagere.Add(new Deltager(name, voksen));
         }
     }
 }
