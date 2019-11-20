@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace SWDprojekt
 {
     class Booking
     {
-        public List<Deltager> Deltagere { get; set; }
+        public ObservableCollection<Deltager> Deltagere { get; set; }
         public DateTime Dato{ get; set; }
         public Bane ValgtBane{ get; set; }
 
@@ -19,9 +20,17 @@ namespace SWDprojekt
             ValgtBane = valgtBane;
         }
 
+        public void Deltagere()
+        {
+            Deltagere = new ObservableCollection<Deltager>();
+            {
+                Deltagere.Add= new Deltager(DateTime.Now,ValgtBane);
+            }
+        }
+
         public void Add()
         {
-            Deltager.Add(new Deltager())
+            Booking.Add(new Booking(Deltager, DateTime.Now, ValgtBane));
         }
     }
 }
